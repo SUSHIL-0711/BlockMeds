@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Shipment - BlockMeds</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-prescription-bottle-alt"></i>
+            <span>BlockMeds</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="add-shipment.html">Add Shipment</a></li>
+            <li><a href="verify-shipment.html" class="active">Verify Shipment</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="form-section verify-section">
+            <h2><i class="fas fa-search"></i> Verify Drug Shipment</h2>
+            <p class="section-description">Enter the batch ID to verify the authenticity and trace the journey of the medicine</p>
+            
+            <form id="verifyForm" class="form-container">
+                <div class="form-group">
+                    <label for="searchBatchId">Batch ID</label>
+                    <div class="search-input">
+                        <input type="text" id="searchBatchId" name="searchBatchId" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i> Verify
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        
+        <section class="verification-results" id="verificationResults">
+            <div id="verifyLoadingIndicator" class="loading-indicator hidden">
+                <i class="fas fa-spinner fa-spin"></i>
+                <span>Searching blockchain...</span>
+            </div>
+            
+            <div id="verifyResultMessage" class="result-message hidden"></div>
+            
+            <div id="shipmentDetails" class="shipment-details hidden">
+                <h3>Shipment Details</h3>
+                <div id="shipmentInfo" class="shipment-info"></div>
+            </div>
+            
+            <div id="blockchainProof" class="blockchain-proof hidden">
+                <h3>Blockchain Verification</h3>
+                <div class="verification-status" id="verificationStatus"></div>
+                <div class="block-hash-details" id="blockHashDetails"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-prescription-bottle-alt"></i>
+                <span>BlockMeds</span>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-shipment.html">Add Shipment</a></li>
+                    <li><a href="verify-shipment.html">Verify Shipment</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BlockMeds - Pharmaceutical Blockchain Tracking</p>
+        </div>
+    </footer>
+    
+    <script src="js/verify-shipment.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Shipment - BlockMeds</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-prescription-bottle-alt"></i>
+            <span>BlockMeds</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="add-shipment.html" class="active">Add Shipment</a></li>
+            <li><a href="verify-shipment.html">Verify Shipment</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="form-section">
+            <h2><i class="fas fa-plus-circle"></i> Add New Drug Shipment</h2>
+            <p class="section-description">Enter details about the pharmaceutical shipment to add it to the blockchain</p>
+            
+            <form id="shipmentForm" class="form-container">
+                <div class="form-group">
+                    <label for="batchId">Batch ID</label>
+                    <input type="text" id="batchId" name="batchId" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="drugName">Drug Name</label>
+                    <input type="text" id="drugName" name="drugName" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="manufacturer">Manufacturer</label>
+                        <input type="text" id="manufacturer" name="manufacturer" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="manufacturingDate">Manufacturing Date</label>
+                        <input type="date" id="manufacturingDate" name="manufacturingDate" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="date" id="expiryDate" name="expiryDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" required min="1">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="origin">Origin</label>
+                        <input type="text" id="origin" name="origin" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="temperature">Storage Temperature (°C)</label>
+                    <input type="number" id="temperature" name="temperature" step="0.1" required>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Add to Blockchain
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-times"></i> Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+        
+        <section class="result-section" id="resultSection">
+            <div id="loadingIndicator" class="loading-indicator hidden">
+                <i class="fas fa-spinner fa-spin"></i>
+                <span>Processing...</span>
+            </div>
+            <div id="resultMessage" class="result-message hidden"></div>
+            <div id="blockDetails" class="block-details hidden">
+                <h3>Block Details</h3>
+                <div id="blockInfo"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-prescription-bottle-alt"></i>
+                <span>BlockMeds</span>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-shipment.html">Add Shipment</a></li>
+                    <li><a href="verify-shipment.html">Verify Shipment</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BlockMeds - Pharmaceutical Blockchain Tracking</p>
+        </div>
+    </footer>
+    
+    <script src="js/add-shipment.js"></script>
+</body>
+</html>
