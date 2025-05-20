@@ -72,7 +72,7 @@
 
 ## 🖼️ Screenshots 
 
-- 🔗 ![Blockchain chain visualization](Images/Dashboard.png) 
+- 🔗 ![Blockchain chain visualization](Images/Verificationsuccessfailurescreen.png) 
 - 📋 ![ Drug shipment form](Images/Dashboard.png) 
 - ✅ ![Verification success/failure screen](Images/Dashboard.png) 
 
