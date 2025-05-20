@@ -1,5 +1,7 @@
 # BlockMeds – Blockchain-Based Pharmaceutical Supply Chain Management System
 
+![ BlockMeds Banner](Images/Dashboard.png)
+
 ## 🚀 Project Overview
 
 **BlockMeds** is a full-stack web application built to track the journey of pharmaceutical drugs from the manufacturer to the pharmacy using a **custom-built blockchain in JavaScript**. It ensures:
