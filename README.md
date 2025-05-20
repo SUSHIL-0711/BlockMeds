@@ -74,7 +74,7 @@
 
 - 🔗 ![Blockchain chain visualization](Images/Verificationsuccessfailurescreen.png) 
 - 📋 ![ Drug shipment form](Images/Drug_shipment_form.png) 
-- ✅ ![Verification success/failure screen](Images/Dashboard.png) 
+- ✅ ![Verification success/failure screen](Images/Verificationsuccessfailurescreen.png) 
 
 ## 🧾 Code Snippet Example
 
