@@ -69,6 +69,13 @@
 - Created a `Dockerfile` using `node:alpine`
 - Used Docker CLI to build and run the container
 
+
+## 🖼️ Screenshots 
+
+- 🔗 ![Blockchain chain visualization](Images/Dashboard.png) 
+- 📋 ![ Drug shipment form](Images/Dashboard.png) 
+- ✅ ![Verification success/failure screen](Images/Dashboard.png) 
+
 ## 🧾 Code Snippet Example
 
 ```javascript
